@@ -17,7 +17,7 @@ $result = $conn->query($sql)
 if ($result->num_rows > 0) {
     // Output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "ID: " . $row["AArticles"]. " - Name: " . $row["Price"]. "<br>";
+        echo "AArticles: " . $row["AArticles"]. " - Pricee: " . $row["Price"]. "<br>";
     }
 } else {
     echo "0 results";
